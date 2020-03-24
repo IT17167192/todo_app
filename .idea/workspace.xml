@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a72d2403-0137-46fe-a8f7-5299ec82f2b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/MaterialUIPickers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/TodoList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/TodoMain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TodoMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TodoMain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,14 +66,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585051498118</updated>
-      <workItem from="1585051499732" duration="20241000" />
+      <workItem from="1585051499732" duration="24647000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1585076951798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585076951798</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585076950308">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585076950308" />
+    <state x="553" y="257" key="Github.ShareDialog" timestamp="1585076988334">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585076988334" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1585059300029">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -8,6 +8,7 @@ import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import DateFnsUtils from '@date-io/date-fns';
 import TodoList from "./TodoList";
+import Alert from "react-bootstrap/Alert";
 
 import {
     MuiPickersUtilsProvider,
@@ -24,21 +25,22 @@ class TodoMain extends Component {
     }
 
     state = {
-        currentTask : {
+        currentTask: {
             value: '',
             date: Date.now(),
             time: Date.now(),
             key: '',
             completed: false
         },
-        allTasks : [],
+        allTasks: [],
         edit: false,
-        editTaskKey: ''
+        editTaskKey: '',
+        showError : false
     };
 
-    handleDateChange = date  => {
+    handleDateChange = date => {
         this.setState({
-            currentTask : {
+            currentTask: {
                 value: this.state.currentTask.value,
                 key: this.state.edit ? this.state.editTaskKey : this.state.currentTask.key,
                 date: date,
@@ -48,9 +50,9 @@ class TodoMain extends Component {
         });
     };
 
-    handleTimeChange = time  => {
+    handleTimeChange = time => {
         this.setState({
-            currentTask : {
+            currentTask: {
                 value: this.state.currentTask.value,
                 key: this.state.edit ? this.state.editTaskKey : this.state.currentTask.key,
                 date: this.state.currentTask.date,
@@ -68,7 +70,8 @@ class TodoMain extends Component {
                 date: this.state.currentTask.date,
                 time: this.state.currentTask.time,
                 completed: this.state.currentTask.completed
-            }
+            },
+            showError: false
         });
     };
 
@@ -76,7 +79,7 @@ class TodoMain extends Component {
         event.preventDefault();
         const newtask = this.state.currentTask;
 
-        if(newtask.value !== ""){
+        if (newtask.value !== "") {
             const tasks = [...this.state.allTasks, newtask];
             this.setState({
                 allTasks: tasks,
@@ -90,15 +93,34 @@ class TodoMain extends Component {
                 edit: false,
                 editTaskKey: ''
             });
+        }else{
+            this.setState({
+                showError: true
+            });
         }
     };
 
     handleKeyPress = (target) => {
-        if(target.charCode===13){
+        if (target.charCode === 13) {
             this.btn.current.click();
         }
     };
 
+    setShowErrorFalse = () => {
+        this.setState({
+            showError: false
+        });
+    };
+
+    showErrorMessage = () => {
+        if(this.state.showError){
+            return (
+                <Alert key='alert' variant='danger' onClose={() => this.setShowErrorFalse()} dismissible>
+                    Please enter a task name
+                </Alert>
+            );
+        }
+    };
 
     deleteTaskFromListById = key => {
         const filteredTasks = this.state.allTasks.filter(task => task.key !== key);
@@ -160,11 +182,14 @@ class TodoMain extends Component {
                                 value={this.state.currentTask.value}
                                 onChange={this.onInputChangeHandler}
                                 onKeyPress={this.handleKeyPress}
+                                required
                             />
                             <InputGroup.Append>
-                                <Button ref={this.btn} variant="outline-secondary" id="submitBtn" onClick={this.handleSubmit}>Button</Button>
+                                <Button ref={this.btn} variant="outline-secondary" id="submitBtn"
+                                        onClick={this.handleSubmit}>Add Task</Button>
                             </InputGroup.Append>
                         </InputGroup>
+                        {this.showErrorMessage()}
                     </Col>
                     <Col>
                         <MuiPickersUtilsProvider utils={DateFnsUtils}>
@@ -199,7 +224,16 @@ class TodoMain extends Component {
                 <br/>
                 <Row>
                     <Col>
-                        <TodoList reference={this.todo} tasks={this.state.allTasks} editTaskById={this.editTaskById} setTaskCompleted={this.setCompleted} removeTaskById={this.deleteTaskFromListById} />
+                        <TodoList reference={this.todo} show="todos" tasks={this.state.allTasks}
+                                  editTaskById={this.editTaskById} setTaskCompleted={this.setCompleted}
+                                  removeTaskById={this.deleteTaskFromListById}/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <TodoList reference={this.todo} show="completed" tasks={this.state.allTasks}
+                                  editTaskById={this.editTaskById} setTaskCompleted={this.setCompleted}
+                                  removeTaskById={this.deleteTaskFromListById}/>
                     </Col>
                 </Row>
             </Container>

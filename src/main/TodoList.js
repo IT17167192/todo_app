@@ -12,10 +12,17 @@ import EditTwoToneIcon from '@material-ui/icons/EditTwoTone';
 import Tooltip from '@material-ui/core/Tooltip';
 
 export default function TodoList(props) {
-    const tasks = props.tasks;
+    let tasks = props.tasks;
+    if(props.show === 'todos'){
+        tasks = tasks.filter(task => task.completed === false);
+    }else if(props.show === 'completed'){
+        tasks = tasks.filter(task => task.completed === true);
+    }
+
     tasks.sort(function(a, b) {
-        return a.key - b.key;
+        return b.key - a.key;
     });
+
     dayjs.extend(relativeTime);
 
     const list = tasks.map(item => {
