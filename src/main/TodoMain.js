@@ -9,6 +9,8 @@ import Button from "react-bootstrap/Button";
 import DateFnsUtils from '@date-io/date-fns';
 import TodoList from "./TodoList";
 import Alert from "react-bootstrap/Alert";
+import Snackbar from '@material-ui/core/Snackbar';
+import Fade from '@material-ui/core/Fade';
 
 import {
     MuiPickersUtilsProvider,
@@ -35,7 +37,10 @@ class TodoMain extends Component {
         allTasks: [],
         edit: false,
         editTaskKey: '',
-        showError : false
+        showError : false,
+        showUpdateSuccess: false,
+        Transition: Fade,
+        openSnackBar: false
     };
 
     handleDateChange = date => {
@@ -46,7 +51,8 @@ class TodoMain extends Component {
                 date: date,
                 time: this.state.currentTask.date,
                 completed: this.state.currentTask.completed
-            }
+            },
+            openSnackBar: false
         });
     };
 
@@ -58,7 +64,8 @@ class TodoMain extends Component {
                 date: this.state.currentTask.date,
                 time: time,
                 completed: this.state.currentTask.completed
-            }
+            },
+            openSnackBar: false
         });
     };
 
@@ -71,16 +78,24 @@ class TodoMain extends Component {
                 time: this.state.currentTask.time,
                 completed: this.state.currentTask.completed
             },
-            showError: false
+            showError: false,
+            showUpdateSuccess: false,
+            openSnackBar: false
         });
     };
 
     handleSubmit = event => {
         event.preventDefault();
-        const newtask = this.state.currentTask;
 
-        if (newtask.value !== "") {
-            const tasks = [...this.state.allTasks, newtask];
+        if(this.state.edit){
+            this.setState({
+                showUpdateSuccess: true
+            })
+        }
+
+        const newTask = this.state.currentTask;
+        if (newTask.value !== "") {
+            const tasks = [...this.state.allTasks.filter(task => task.key !== this.state.editTaskKey), newTask];
             this.setState({
                 allTasks: tasks,
                 currentTask: {
@@ -112,6 +127,12 @@ class TodoMain extends Component {
         });
     };
 
+    setShowUpdateFalse = () => {
+        this.setState({
+            showUpdateSuccess: false
+        });
+    };
+
     showErrorMessage = () => {
         if(this.state.showError){
             return (
@@ -121,6 +142,17 @@ class TodoMain extends Component {
             );
         }
     };
+
+    showSuccessUpdatedMessage = () => {
+        if(this.state.showUpdateSuccess && !this.state.showError){
+            return (
+                <Alert key='alert' variant='success' onClose={() => this.setShowUpdateFalse()} dismissible>
+                    Task updated sucessfully!
+                </Alert>
+            );
+        }
+    };
+
 
     deleteTaskFromListById = key => {
         const filteredTasks = this.state.allTasks.filter(task => task.key !== key);
@@ -146,6 +178,12 @@ class TodoMain extends Component {
 
     };
 
+    handleClose = () => {
+        this.setState({
+            openSnackBar: false
+        })
+    };
+
     editTaskById = key => {
         const index = this.state.allTasks.findIndex((task) => {
             return task.key === key;
@@ -162,10 +200,9 @@ class TodoMain extends Component {
                 completed: task.completed
             },
             edit: true,
-            editTaskKey: task.key
+            editTaskKey: task.key,
+            openSnackBar: true
         });
-
-        this.deleteTaskFromListById(task.key);
 
     };
 
@@ -190,6 +227,7 @@ class TodoMain extends Component {
                             </InputGroup.Append>
                         </InputGroup>
                         {this.showErrorMessage()}
+                        {this.showSuccessUpdatedMessage()}
                     </Col>
                     <Col>
                         <MuiPickersUtilsProvider utils={DateFnsUtils}>
@@ -236,6 +274,12 @@ class TodoMain extends Component {
                                   removeTaskById={this.deleteTaskFromListById}/>
                     </Col>
                 </Row>
+                <Snackbar
+                    open={this.state.openSnackBar}
+                    TransitionComponent={this.state.Transition}
+                    onClose={this.handleClose}
+                    message="Update the Task now!"
+                />
             </Container>
         );
     }
