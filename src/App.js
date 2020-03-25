@@ -11,7 +11,6 @@ function App() {
       <TodoMain/>
       <br/>
       <br/>
-
     </div>
   );
 }

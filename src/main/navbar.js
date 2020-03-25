@@ -13,7 +13,7 @@ export default function NavBar() {
                     height="30"
                     className="d-inline-block align-top"
                 />{' '}
-                TODO Application
+                Todo App
             </Navbar.Brand>
         </Navbar>
     );
