@@ -158,7 +158,16 @@ class TodoMain extends Component {
     deleteTaskFromListById = key => {
         const filteredTasks = this.state.allTasks.filter(task => task.key !== key);
         this.setState({
-            allTasks: filteredTasks
+            allTasks: filteredTasks,
+            currentTask: {
+                value: '',
+                date: Date.now(),
+                time: Date.now(),
+                key: '',
+                completed: false
+            },
+            edit: false,
+            editTaskKey: ''
         });
     };
 

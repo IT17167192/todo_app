@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a72d2403-0137-46fe-a8f7-5299ec82f2b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TodoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TodoMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TodoMain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585051498118</updated>
       <workItem from="1585051499732" duration="31501000" />
-      <workItem from="1585123680754" duration="240000" />
+      <workItem from="1585123680754" duration="3006000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1585076951798</created>
@@ -96,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585091567428</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updating success message">
+      <created>1585123939082</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585123939082</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,13 +115,14 @@
     <MESSAGE value="Show error message" />
     <MESSAGE value="Deleted muiPickers unwanted" />
     <MESSAGE value="Snackbar is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Snackbar is added" />
+    <MESSAGE value="Updating success message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating success message" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585091566175">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585123936712">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585091566175" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585123936712" />
     <state x="553" y="257" key="Github.ShareDialog" timestamp="1585076988334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -134,13 +143,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585091779565" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585091584311">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585123954401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585091584311" />
-    <state x="404" y="155" key="git4idea.merge.GitPullDialog" timestamp="1585091573918">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585123954401" />
+    <state x="404" y="155" key="git4idea.merge.GitPullDialog" timestamp="1585123944725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="404" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585091573918" />
+    <state x="404" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585123944725" />
   </component>
 </project>

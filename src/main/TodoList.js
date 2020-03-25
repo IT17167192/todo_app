@@ -42,8 +42,8 @@ export default function TodoList(props) {
                         <Row>
                             <Col className="text-left" style={{color: "#2196F3"}}>{dayjs(item.key).fromNow()}</Col>
                             <Col>On {dayjs(item.date).format("dddd, MMMM D YYYY")} at {dayjs(item.time).format("h:mm a")}</Col>
-                            <Col className="text-right"><Tooltip title="Edit" placement="bottom-end"><Button
-                                variant="info" onClick={() => props.editTaskById(item.key)}><EditTwoToneIcon/></Button></Tooltip>{' '}<Tooltip
+                            <Col className="text-right"><Tooltip title={item.completed ? "": "Edit"} placement="bottom-end"><Button
+                                variant="info" style={{cursor: item.completed ? "no-drop" : ""}} disabled={item.completed ? true: false}  onClick={() => props.editTaskById(item.key)}><EditTwoToneIcon/></Button></Tooltip>{' '}<Tooltip
                                 title="Delete" placement="bottom-end"><Button
                                 onClick={() => props.removeTaskById(item.key)}
                                 variant="danger"><DeleteOutlineRoundedIcon/></Button></Tooltip></Col>
