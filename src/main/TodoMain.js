@@ -110,7 +110,8 @@ class TodoMain extends Component {
             });
         }else{
             this.setState({
-                showError: true
+                showError: true,
+                showUpdateSuccess: false
             });
         }
     };
