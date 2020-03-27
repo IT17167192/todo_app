@@ -34,7 +34,7 @@ export default function TodoList(props) {
                         <Tooltip placement="left-start"
                                  title={!item.completed ? "Click to complete" : "Click to add as todo"}>
                             <Row className="mb-1">
-                                    <Form.Check type="checkbox" onClick={() => props.setTaskCompleted(item.key)} checked={item.completed ? true : false}/>
+                                    <Form.Check type="checkbox" onChange={() => props.setTaskCompleted(item.key)} checked={item.completed ? true : false}/>
 
                                     <Col xs={11} className="text-left" onClick={() => props.setTaskCompleted(item.key)} style={{
                                         cursor: "pointer",

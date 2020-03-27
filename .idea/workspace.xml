@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a72d2403-0137-46fe-a8f7-5299ec82f2b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TodoList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585051498118</updated>
       <workItem from="1585051499732" duration="31501000" />
-      <workItem from="1585123680754" duration="9173000" />
+      <workItem from="1585123680754" duration="9281000" />
+      <workItem from="1585152136856" duration="2243000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1585076951798</created>
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585130302704</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Navbar app name and check box for the list">
+      <created>1585138719323</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585138719323</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,40 +131,41 @@
     <MESSAGE value="Snackbar is added" />
     <MESSAGE value="Updating success message" />
     <MESSAGE value="Edit disable button for completed tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit disable button for completed tasks" />
+    <MESSAGE value="Navbar app name and check box for the list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navbar app name and check box for the list" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585138701840">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585138717961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585138701840" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585138717961" />
     <state x="553" y="257" key="Github.ShareDialog" timestamp="1585076988334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="553" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1585076988334" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1585138701869">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1585173263353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585138701869" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1585138701868">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585173263353" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1585173263353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585138701868" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1585138701868">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585173263353" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1585173263353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585138701868" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1585138701868">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585173263353" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1585173263353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585138701868" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585130320432">
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585173263353" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585138733981">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585130320432" />
-    <state x="404" y="155" key="git4idea.merge.GitPullDialog" timestamp="1585130309589">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585138733981" />
+    <state x="404" y="155" key="git4idea.merge.GitPullDialog" timestamp="1585138724498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="404" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585130309589" />
+    <state x="404" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585138724498" />
   </component>
 </project>
