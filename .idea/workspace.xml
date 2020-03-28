@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a72d2403-0137-46fe-a8f7-5299ec82f2b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TodoMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TodoMain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +68,8 @@
       <workItem from="1585051499732" duration="31501000" />
       <workItem from="1585123680754" duration="9281000" />
       <workItem from="1585152136856" duration="2243000" />
+      <workItem from="1585335472072" duration="84000" />
+      <workItem from="1585384565751" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1585076951798</created>
@@ -118,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585138719323</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="TodoList.js onchange">
+      <created>1585335514796</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585335514796</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,13 +141,14 @@
     <MESSAGE value="Updating success message" />
     <MESSAGE value="Edit disable button for completed tasks" />
     <MESSAGE value="Navbar app name and check box for the list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar app name and check box for the list" />
+    <MESSAGE value="TodoList.js onchange" />
+    <option name="LAST_COMMIT_MESSAGE" value="TodoList.js onchange" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585138717961">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585335512944">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585138717961" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585335512944" />
     <state x="553" y="257" key="Github.ShareDialog" timestamp="1585076988334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -159,13 +169,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585173263353" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585138733981">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585335534339">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585138733981" />
-    <state x="404" y="155" key="git4idea.merge.GitPullDialog" timestamp="1585138724498">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585335534339" />
+    <state x="404" y="155" key="git4idea.merge.GitPullDialog" timestamp="1585335519173">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="404" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585138724498" />
+    <state x="404" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585335519173" />
   </component>
 </project>

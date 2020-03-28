@@ -233,7 +233,7 @@ class TodoMain extends Component {
                             />
                             <InputGroup.Append>
                                 <Button ref={this.btn} variant="outline-secondary" id="submitBtn"
-                                        onClick={this.handleSubmit}>Add Task</Button>
+                                        onClick={this.handleSubmit}>{this.state.edit ? "Update Task" : "Add Task"}</Button>
                             </InputGroup.Append>
                         </InputGroup>
                         {this.showErrorMessage()}
